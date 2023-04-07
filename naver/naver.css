@@ -1,5 +1,8 @@
 /*Cascading Style Sheet*/
 /*선택자(selector)*/
+* {
+  box-sizing: border-box;
+}
 .blind {
   position: absolute;
   overflow: hidden;
@@ -21,11 +24,11 @@ div#header-center {
 div#header-search h1 {
   display: inline-block;
   width: 230px;
-  height: 50px;
+  height: 48px;
   background-image: url(./sp_main5.png);
-  background-position: 0 -160px;
+  background-position: 0 -170px;
   background-repeat: no-repeat;
-  /* vertical-align: top; */
+  vertical-align: middle;
   /* content: ""; */
   /* text-indent: 100%; */
   /* overflow: hidden; */
@@ -52,8 +55,31 @@ div#header-search fieldset {
   border: 2px solid #03cf5d;
   width: 521px;
   height: 49px;
+  vertical-align: middle;
   display: inline-block;
-  box-sizing: content-box;
+  box-sizing: border-box; /*컨텐츠 중심에서 보더 중심으로바꿈*/
   /*왜 네이버페이지랑 똑같이 설정했는데 크기가 다를까?
   */
+}
+div#header-search fieldset input {
+  border: none; /*내가 설정하지 않아도 브라우저에서 자동으로 패딩이나 보더값을 넣어놔버림
+  따라서 이것을 없애는 코드이다.*/
+  padding: 0;
+  outline: none; /**/
+}
+#header-search fieldset button {
+  width: 49px;
+  height: 49px;
+  border: none;
+  padding: 0;
+  background: #03cf5d;
+}
+#search-image {
+  background-image: url(./sp_main3.png);
+  background-position: -475px -28px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 27px;
+  display: inline-block;
+  vertical-align: top;
 }
