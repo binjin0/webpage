@@ -53,19 +53,23 @@ div#header-search fieldset {
   padding-right: 0; */
   padding: 12px 0 12px 10px;
   border: 2px solid #03cf5d;
-  width: 521px;
-  height: 49px;
+  width: 582px;
+  height: 52px;
   vertical-align: middle;
   display: inline-block;
-  box-sizing: border-box; /*컨텐츠 중심에서 보더 중심으로바꿈*/
-  /*왜 네이버페이지랑 똑같이 설정했는데 크기가 다를까?
+  box-sizing: border-box; /*컨텐츠 중심에서 보더 중심으로바꿈
+  왜 네이버페이지랑 똑같이 설정했는데 크기가 다를까?
   */
+  position: relative;
 }
 div#header-search fieldset input {
   border: none; /*내가 설정하지 않아도 브라우저에서 자동으로 패딩이나 보더값을 넣어놔버림
   따라서 이것을 없애는 코드이다.*/
   padding: 0;
   outline: none; /**/
+  vertical-align: top;
+  width: 405px;
+  height: 23px;
 }
 #header-search fieldset button {
   width: 49px;
@@ -73,6 +77,9 @@ div#header-search fieldset input {
   border: none;
   padding: 0;
   background: #03cf5d;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #search-image {
   background-image: url(./sp_main3.png);
