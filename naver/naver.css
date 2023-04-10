@@ -3,6 +3,10 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .blind {
   position: absolute;
   overflow: hidden;
@@ -11,7 +15,7 @@
   width: 1px;
   height: 1px;
 }
-div#header-center {
+.center-align {
   margin: 0 auto;
   width: 1080px;
 }
@@ -72,6 +76,7 @@ div#header-search fieldset input {
   height: 23px;
 }
 #header-search fieldset button {
+  /*원래는 형제태그인 input그다음에 위치하지만 position을 이용하여 위치를 바꿀 수 있다.*/
   width: 49px;
   height: 49px;
   border: none;
@@ -89,4 +94,52 @@ div#header-search fieldset input {
   height: 27px;
   display: inline-block;
   vertical-align: top;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+/*공통적인 것은 빼서 묶어주는 것이 좋은 코딩!
+ */
+nav li span:first-child {
+  height: 16px;
+  display: inline-block;
+  background-image: url(sp_nav.png);
+  background-repeat: no-repeat;
+  margin-left: 14px;
+}
+/*nav안에 첫번째 list선택
+그런데 first-child, nth-child같은 것은 실무에서 안쓰는 것이 좋음. 유지보수가 힘듦*/
+/*우선순위가 nav li span:first-child(동메달 2개 은메달 1개)보다 높음 
+nav li:first-child span:first-child는 동메달 1개 은메달 2개*/
+nav li:first-child span:first-child {
+  width: 25px;
+  background-position: 0 -285px;
+  margin-left: 0;
+}
+nav li:nth-child(2) span:first-child {
+  width: 27px;
+  background-position: -279px -52px;
+}
+nav li:nth-child(3) span:first-child {
+  width: 40px;
+  background-position: -100px -182px;
+}
+nav li:nth-child(4) span:first-child {
+  width: 40px;
+  background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+  width: 26px;
+  background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+  width: 25px;
+  background-position: -70px -285px;
 }
