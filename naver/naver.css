@@ -19,6 +19,32 @@ body {
   margin: 0 auto;
   width: 1080px;
 }
+#header-top {
+  float: right;
+}
+#header-top a {
+  text-decoration: none;
+}
+#header-top .link-set {
+  font-size: 11px;
+  color: #404040;
+  line-height: 22px; /*font-size가 커져도 높이는 22px로 고정됨*/
+}
+#header-top .link-set::after {
+  display: inline-block;
+  background-image: url(./sp_main6.png);
+  width: 31px;
+  height: 33px;
+  background-position: 0px -196px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: "";
+  margin: -4px 0 0 5px;
+}
+
+#header-search {
+  clear: right;
+}
 #header-search a {
   text-decoration: none;
 }
