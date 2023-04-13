@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="./naver.css" />
+    <!--./:현재폴더-->
+    <title>네이버</title>
+  </head>
+  <body>
+    <header>
+      <div style="background-color: yellow; overflow: auto">
+        <!--부모와 자식 요소의 높이를 다르게 하고 실행시켜보면 부모요소인 위에 div태그가 아래 동동동동인 하위 요소를 다 안감싸고 있다.
+        왜그럴까? 부모는block format context가 아니기때문에! 따라서 block format context를 하기 위해 overflow:auto나 overflow:hidden을 
+      해주게 되면 부모요소가 자식 요소(float속성을 갖음)를 모두 감싸게 한다.
+      <div style="background-color: yellow; hight::150px; overflow: auto"> 인 경우: 부모가 자식보다 높이가 짧음. 
+        따라서 스크롤바를 생성해 넘치는 것을 커버함
+      <div style="background-color: yellow; hight:150px overflow: hidden">인 경우 :  자식이 부모보다 높이면 그냥 부모 크기까지만 나오게 하여 잘라버림. 보통 히든을 더 자주 씀 -->
+
+        <div style="float: right; background-color: green; height: 200px">
+          동동동동
+        </div>
+        <div>
+          가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+        </div>
+      </div>
+      <div class="center-align">
+        <!--
+        <div style="display: inline-block;">네이버를 시작페이지로</div>
+        <div style="display: inline-block;">쥬니어네이버</div>
+        <div style="display: inline-block;">해피빈</div>
+        -->
+        <div>
+          <span>네이버를 시작페이지로</span>
+          <span>쥬니어네이버</span>
+          <span>해피빈</span>
+        </div>
+
+        <div id="header-search">
+          <a href="http://www.naver.com">
+            <h1>
+              <!-- <a href="http://www.naver.com">네이버</a>-->
+              <span>네이버</span>
+
+              <!--주석(comment)입니다.-->
+              <!--속성(arrtibute)입니다.-->
+            </h1>
+          </a>
+
+          <h2>검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input /><!--짧은 text, input은 바로 종료태그 써주는 습관 들이기-->
+            <button>
+              <span class="blind">검색</span> <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="center-align">
+        <ul>
+          <li>
+            <a href=""><span></span><span class="blind">메일</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">카페</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">블로그</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지식인</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">쇼핑</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버페이</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버tv</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h2>실시간 검색어</h2>
+      <h3>연합뉴스</h3>
+      <ol>
+        <li>충격) 제초로 지금 목아파.....</li>
+        <li>속보) 방송종료하고 싶어</li>
+        <li>중대발표 : 다음 강좌 언제 될지 모르겠다.</li>
+      </ol>
+      <h3>언론사 목록</h3>
+      <ul>
+        <li><img src="NEWSIS.png" alt="NEWSIS" /></li>
+        <li><img src="프레시안.png" alt="프레시안" /></li>
+      </ul>
+      <h3>로그인</h3>
+      <h3>뉴스</h3>
+      <h3>법률</h3>
+      <h3>쇼핑</h3>
+      <h3>쇼핑</h3>
+    </main>
+    <footer>
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
+</html>
