@@ -3,9 +3,12 @@
 * {
   box-sizing: border-box;
 }
+html,
 body {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 .blind {
   position: absolute;
@@ -19,8 +22,12 @@ body {
   margin: 0 auto;
   width: 1080px;
 }
+header {
+  height: 170px;
+}
 #header-top {
   float: right;
+  margin-top: 7px;
 }
 #header-top a {
   text-decoration: none;
@@ -35,7 +42,7 @@ body {
   background-image: url(./sp_main6.png);
   width: 31px;
   height: 33px;
-  background-position: 0px -196px;
+  background-position: 0px -199px;
   background-repeat: no-repeat;
   vertical-align: top;
   content: "";
@@ -44,6 +51,7 @@ body {
 
 #header-search {
   clear: right;
+  padding-top: 20px;
 }
 #header-search a {
   text-decoration: none;
@@ -121,9 +129,16 @@ div#header-search fieldset input {
   display: inline-block;
   vertical-align: top;
 }
+nav {
+  position: relative;
+  height: 46px;
+  border-top: 1px solid #f1f3f6;
+  border-bottom: 1px solid #d1d8e4;
+}
 nav ul {
+  display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0 4px;
   list-style: none;
 }
 nav li {
@@ -168,4 +183,28 @@ nav li:nth-child(5) span:first-child {
 nav li:nth-child(6) span:first-child {
   width: 25px;
   background-position: -70px -285px;
+}
+.nav-divider {
+  display: inline-block;
+  margin: 18px 16px 0;
+  width: 1px;
+  height: 14px;
+  background: #ebeef3;
+}
+#search-ranking {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+#rank-number {
+  margin-top: -9px;
+  color: #00ab33;
+  font-size: 16px;
+}
+#rank-title {
+  letter-spacing: -1px;
+  font-size: 14px;
+}
+main {
+  background-color: #f2f4f7;
 }
