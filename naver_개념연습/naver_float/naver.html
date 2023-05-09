@@ -12,9 +12,14 @@
   <body>
     <header>
       <div style="background-color: yellow; overflow: auto">
-        <!--부모와 자식 요소의 높이를 다르게 하고 실행시켜보면 부모요소인 위에 div태그가 아래 동동동동인 하위 요소를 다 안감싸고 있다.
-        왜그럴까? 부모는block format context가 아니기때문에! 따라서 block format context를 하기 위해 overflow:auto나 overflow:hidden을 
-      해주게 되면 부모요소가 자식 요소(float속성을 갖음)를 모두 감싸게 한다.
+        <!--
+        1. float의 속성
+        float이 둥둥떠있는 존재라고 배웠다. 하지만 float으로 설정한 컨텐츠 밑으로 다른 콘텐츠들이 들어가는 것이 아니고 그 주변을 감싼다.
+        둥둥떠있다고 생각해서 콘텐츠끼리 겹친다하고 생각하지 말자!
+        2.부모와 자식 요소에게 높이를 지정하다면?
+        부모요소인 위에 div태그가 아래 동동동동인 하위 요소를 다 안감싸고 있다.
+        왜냐하면 부모는block format context가 아니기때문에! 따라서 block format context를 하기 위해 overflow:auto나 overflow:hidden을 
+        해주게 되면 부모요소가 자식 요소(float속성을 갖음)를 모두 감싸게 한다.
       <div style="background-color: yellow; hight::150px; overflow: auto"> 인 경우: 부모가 자식보다 높이가 짧음. 
         따라서 스크롤바를 생성해 넘치는 것을 커버함
       <div style="background-color: yellow; hight:150px overflow: hidden">인 경우 :  자식이 부모보다 높이면 그냥 부모 크기까지만 나오게 하여 잘라버림. 보통 히든을 더 자주 씀 -->
