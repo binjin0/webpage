@@ -19,6 +19,7 @@ body {
   height: 1px;
 }
 .center-align {
+  position: relative;
   margin: 0 auto;
   width: 1080px;
 }
@@ -35,7 +36,8 @@ header {
 #header-top .link-set {
   font-size: 11px;
   color: #404040;
-  line-height: 22px; /*font-size가 커져도 높이는 22px로 고정됨*/
+  line-height: 22px; /*font-size가 커져도 높이는 22px로 고정됨
+  폰트 속성만 파고들면 또 상당히 복잡함. 나중에 공부해보면 좋을 듯!!*/
 }
 #header-top .link-set::after {
   display: inline-block;
@@ -51,7 +53,7 @@ header {
 
 #header-search {
   clear: right;
-  padding-top: 20px;
+  padding-top: -5px;
 }
 #header-search a {
   text-decoration: none;
@@ -207,5 +209,4 @@ nav li:nth-child(6) span:first-child {
 }
 main {
   background-color: #f2f4f7d7;
-
 }
