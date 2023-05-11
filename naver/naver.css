@@ -173,6 +173,7 @@ nav li span:first-child {
   background-repeat: no-repeat;
   margin-left: 14px;
 }
+
 /*nav안에 첫번째 list선택
 그런데 first-child, nth-child같은 것은 실무에서 안쓰는 것이 좋음. 유지보수가 힘듦*/
 /*우선순위가 nav li span:first-child(동메달 2개 은메달 1개)보다 높음 
@@ -228,9 +229,13 @@ nav li:nth-child(12) span:first-child {
   width: 46px;
   background-position: -165px -130px;
 }
-nav li:nth-child(10) span:first-child {
+nav li:nth-child(13) span:first-child {
+  width: 26px;
+  background-position: -134px -79px;
+}
+nav li:nth-child(14) span:first-child {
   width: 32px;
-  background-position: -153px -156px;
+  background-position: -277px -1px;
 }
 
 .nav-divider {
