@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="./naver.css" />
+    <!--./:현재폴더-->
+    <title>네이버</title>
+  </head>
+  <body>
+    <!--마진 상쇄  -> 해결방법 부모를 block format context로 만들기-->
+    <div
+      style="
+        height: 20px;
+        margin-bottom: 20px;
+        background: yellow;
+        float: left;
+        width: 100%;
+      "
+    >
+      <!--위와 같이 float를 사용하여 블록 포맷 컨텍스트 를 만듦. 그러면 마진상쇄가 일어나지 않음-->
+      <div style="height: 20px; margin-top: 20px; background: green"></div>
+    </div>
+    <header>
+      <div class="center-align">
+        <!--
+        <div style="display: inline-block;">네이버를 시작페이지로</div>
+        <div style="display: inline-block;">쥬니어네이버</div>
+        <div style="display: inline-block;">해피빈</div>
+        -->
+        <div id="header-top">
+          <a href="" class="link-set">네이버를 시작페이지로 </a>
+          <a href=""><span class="blind">쥬니어네이버</span></a>
+          <a href=""><span class="blind">해피빈</span></a>
+        </div>
+
+        <div id="header-search">
+          <a href="http://www.naver.com">
+            <h1>
+              <!-- <a href="http://www.naver.com">네이버</a>-->
+              <span>네이버</span>
+
+              <!--주석(comment)입니다.-->
+              <!--속성(arrtibute)입니다.-->
+            </h1>
+          </a>
+
+          <h2>검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input /><!--짧은 text, input은 바로 종료태그 써주는 습관 들이기.-->
+            <span id="search-keybord"></span>
+            <span id="search-history"></span>
+            <button>
+              <span class="blind">검색</span> <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="center-align relative">
+        <div id="search-ranking">
+          <h2 class="blind">실시간 검색어</h2>
+          <span id="rank-number">1</span>
+          <span id="rank-title">제로초</span>
+        </div>
+        <ul>
+          <li>
+            <a href=""><span></span><span class="blind">메일</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">카페</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">블로그</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지식인</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">쇼핑</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버페이</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버tv</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">사전</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">뉴스</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">증권</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">부동산</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지도</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">VIBE</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">도서</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">웹툰</span></a>
+          </li>
+        </ul>
+        <div class="nav-divider"></div>
+        <ul>
+          <li>
+            <a href=""><span></span><span class="blind">더보기</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <!--nav랑 메인이 사이에 공간이 왜 생길까?(h3가 부모인 nav안에 다 들어가지 않고 튀어나옴) 그렇다면 왜 부모가 자식의 마진을 감싸지 않지?
+->블록 포맷 컨텍스트때문에!! div,main이 블록포맷 컨텍스트가 아니기때문에 자식의  영역을 다 커버하지 못한다.
+-->
+      <div class="center-align"></div>
+      <h3>연합뉴스</h3>
+      <ol>
+        <li>충격) 제초로 지금 목아파.....</li>
+        <li>속보) 방송종료하고 싶어</li>
+        <li>중대발표 : 다음 강좌 언제 될지 모르겠다.</li>
+      </ol>
+      <h3>언론사 목록</h3>
+      <ul>
+        <li><img src="NEWSIS.png" alt="NEWSIS" /></li>
+        <li><img src="프레시안.png" alt="프레시안" /></li>
+      </ul>
+      <h3>로그인</h3>
+      <h3>뉴스</h3>
+      <h3>법률</h3>
+      <h3>쇼핑</h3>
+      <h3>쇼핑</h3>
+    </main>
+    <footer>
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
+</html>

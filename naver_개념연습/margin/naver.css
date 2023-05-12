@@ -262,7 +262,4 @@ nav li:nth-child(14) span:first-child {
 }
 main {
   background-color: #f2f4f7d7;
-  display: inline-block;
-  width: 100%;
 }
-/*main의 속성중 displat: inline-block을 주므로 마진상쇄를 없앴다.*/
