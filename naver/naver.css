@@ -269,35 +269,70 @@ main {
   display: inline-block;
   width: 100%;
 }
+#main-centered {
+  padding: 8px 10px 0;
+  width: 1100px;
+}
 #main-ad {
   display: inline-block;
   width: 740px;
   height: 120px;
+  background: #555;
 }
 #main-login {
   display: inline-block;
   width: 332px;
   height: 120px;
+  vertical-align: top;
+  background-color: white;
 }
 #main-ytn {
   display: inline-block;
   width: 740px;
   height: 46px;
+  background-color: white;
 }
 #main-newsstand {
   display: inline-block;
   width: 740px;
   height: 246px;
+  background-color: white;
 }
 #main-weather {
   display: inline-block;
   width: 332px;
   height: 142px;
+  background-color: white;
 }
 #main-second-ad {
   display: inline-block;
   width: 332px;
   height: 150px;
   background: #555;
+}
+#main-category {
+  display: inline-block;
+  width: 740px;
+  height: 837px;
+  background-color: white;
+}
+#main-shpping {
+  display: inline-block;
+  width: 332px;
+  height: 837px;
+  background-color: white;
+}
+#main-event {
+  display: inline-block;
+  width: 740px;
+  height: 130px;
+  background-color: white;
+  vertical-align: top;
+}
+#main-third-ad {
+  display: inline-block;
+  width: 332px;
+  height: 130px;
+  background-color: #555;
 }
 /*main의 속성중 displat: inline-block을 주므로 마진상쇄를 없앴다.*/
