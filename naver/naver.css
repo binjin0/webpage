@@ -10,6 +10,19 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
     helvetica, "Apple SD Gothic Neo", sans-serif;
 }
+/*h태그는 마진이 기본적으로 들어가있음. 그래서 미리 초기화 해놓고 시작하는 것이
+설정할때 헷갈리지 않는다.*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.inline-block {
+  display: inline-block;
+}
 .blind {
   position: absolute;
   overflow: hidden;
@@ -270,64 +283,124 @@ main {
   width: 100%;
 }
 #main-centered {
-  padding: 8px 10px 0;
+  padding: 8px 10px;
   width: 1100px;
 }
-#main-ad {
+#main-first-block {
   display: inline-block;
+  width: 100%;
+}
+#main-ad {
+  /* display: inline-block; ->float을 쓰면 inline-block이 필요없음*/
   width: 740px;
   height: 120px;
   background: #555;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  float: left;
 }
 #main-login {
-  display: inline-block;
+  /* display: inline-block;->float을 쓰면 inline-block은 안써도 됨 */
   width: 332px;
   height: 120px;
   vertical-align: top;
   background-color: white;
+  margin-bottom: 8px;
+  float: left;
+}
+#main-second-block .inline-block:first-child {
+  width: 740px;
+}
+#main-second-block .inline-block:last-child {
+  width: 332px;
+  vertical-align: top;
 }
 #main-ytn {
   display: inline-block;
   width: 740px;
   height: 46px;
   background-color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+#main-ytn h3,
+#main-ytn ol {
+  display: inline-block;
 }
 #main-newsstand {
   display: inline-block;
   width: 740px;
   height: 246px;
   background-color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+#main-newsstand h3 {
+  height: 45px;
+  border-bottom: 1px solid #ebeef3;
+}
+#main-newsstand ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#main-newsstand li {
+  width: 123px;
+  height: 67px;
+  float: left;
+  border-right: 1px solid #f1f3f6;
+  border-bottom: 1px solid #f1f3f6;
+  text-align: center;
+}
+#main-newsstand li img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #main-weather {
   display: inline-block;
   width: 332px;
   height: 142px;
   background-color: white;
+  margin-bottom: 8px;
 }
 #main-second-ad {
   display: inline-block;
   width: 332px;
   height: 150px;
   background: #555;
+  margin-bottom: 8px;
 }
 #main-category {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
   width: 740px;
   height: 837px;
   background-color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 #main-shpping {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
   width: 332px;
   height: 837px;
   background-color: white;
+  margin-bottom: 8px;
+}
+#main-third-ad,
+#main-fourth-block {
+  display: inline-block;
+  width: 100%;
 }
 #main-event {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
   width: 740px;
   height: 130px;
   background-color: white;
   vertical-align: top;
+  margin-right: 8px;
 }
 #main-third-ad {
   display: inline-block;
