@@ -290,6 +290,7 @@ main {
 #main-first-block {
   display: inline-block;
   width: 100%;
+  vertical-align: top;
 }
 #main-ad {
   /* display: inline-block; ->float을 쓰면 inline-block이 필요없음*/
@@ -309,8 +310,14 @@ main {
   margin-bottom: 8px;
   float: left;
 }
+#main-second-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
 #main-second-block .inline-block:first-child {
   width: 740px;
+  margin-right: 8px;
 }
 #main-second-block .inline-block:last-child {
   width: 332px;
@@ -335,6 +342,7 @@ main {
   background-color: white;
   margin-right: 8px;
   margin-bottom: 8px;
+  vertical-align: top;
 }
 #main-newsstand h3 {
   height: 45px;
@@ -344,9 +352,11 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
+  vertical-align: top;
 }
 #main-newsstand li {
-  width: 123px;
+  width: calc(100% / 6);
   height: 67px;
   float: left;
   border-right: 1px solid #f1f3f6;
