@@ -181,7 +181,7 @@ nav ul {
 nav li {
   display: inline-block;
 }
-/*공통적인 것은 빼서 묶어주는 것이 좋은 코딩!
+/*공통적인 것은 빼서 묶어주는 것이 좋은 코딩!!
  */
 nav li span:first-child {
   height: 16px;
