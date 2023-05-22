@@ -178,12 +178,12 @@ nav ul {
   padding: 16px 0 0 4px;
   list-style: none;
 }
-nav li {
+#nav-menu li {
   display: inline-block;
 }
 /*공통적인 것은 빼서 묶어주는 것이 좋은 코딩!!
  */
-nav li span:first-child {
+#nav-menu li span:first-child {
   height: 16px;
   display: inline-block;
   background-image: url(sp_nav.png);
@@ -195,66 +195,66 @@ nav li span:first-child {
 그런데 first-child, nth-child같은 것은 실무에서 안쓰는 것이 좋음. 유지보수가 힘듦*/
 /*우선순위가 nav li span:first-child(동메달 2개 은메달 1개)보다 높음 
 nav li:first-child span:first-child는 동메달 1개 은메달 2개*/
-nav li:first-child span:first-child {
+#nav-menu li:first-child span:first-child {
   width: 25px;
   background-position: 0 -285px;
   margin-left: 0;
 }
-nav li:nth-child(2) span:first-child {
+#nav-menu li:nth-child(2) span:first-child {
   width: 27px;
   background-position: -279px -52px;
 }
-nav li:nth-child(3) span:first-child {
+#nav-menu li:nth-child(3) span:first-child {
   width: 40px;
   background-position: -100px -182px;
 }
-nav li:nth-child(4) span:first-child {
+#nav-menu li:nth-child(4) span:first-child {
   width: 40px;
   background-position: -101px -156px;
 }
 
-nav li:nth-child(5) span:first-child {
+#nav-menu li:nth-child(5) span:first-child {
   width: 26px;
   background-position: -279px -156px;
 }
 
-nav li:nth-child(6) span:first-child {
+#nav-menu li:nth-child(6) span:first-child {
   width: 25px;
   background-position: -70px -285px;
 }
-nav li:nth-child(7) span:first-child {
+#nav-menu li:nth-child(7) span:first-child {
   width: 32px;
   background-position: -275px -207px;
 }
-nav li:nth-child(8) span:first-child {
+#nav-menu li:nth-child(8) span:first-child {
   width: 32px;
   background-position: -129px -104px;
 }
-nav li:nth-child(9) span:first-child {
+#nav-menu li:nth-child(9) span:first-child {
   width: 32px;
   background-position: -35px -260px;
 }
-nav li:nth-child(10) span:first-child {
+#nav-menu li:nth-child(10) span:first-child {
   width: 40px;
   background-position: -153px -156px;
 }
-nav li:nth-child(11) span:first-child {
+#nav-menu li:nth-child(11) span:first-child {
   width: 28px;
   background-position: -280px -130px;
 }
-nav li:nth-child(12) span:first-child {
+#nav-menu li:nth-child(12) span:first-child {
   width: 46px;
   background-position: -165px -130px;
 }
-nav li:nth-child(13) span:first-child {
+#nav-menu li:nth-child(13) span:first-child {
   width: 26px;
   background-position: -134px -79px;
 }
-nav li:nth-child(14) span:first-child {
+#nav-menu li:nth-child(14) span:first-child {
   width: 32px;
   background-position: -277px -1px;
 }
-nav li.more:first-child span:first-child {
+#nav-menu li.more:first-child span:first-child {
   width: 55px;
   background-position: 0 -104px;
 }
@@ -270,7 +270,26 @@ nav li.more:first-child span:first-child {
 #search-ranking {
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 0;
+  width: 198px;
+  height: 20px;
+}
+
+#search-ranking ul {
+  display: none;
+  list-style: none;
+  padding: 17px;
+  margin: 0;
+  width: 332px;
+  height: 334px;
+  border: 1px solid #aaa;
+  background-color: white;
+  position: absolute;
+  top: -14px;
+  right: 0;
+}
+#search-ranking:hover ul {
+  display: inline-block;
 }
 #rank-number {
   margin-top: -9px;
