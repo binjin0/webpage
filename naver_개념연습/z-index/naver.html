@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="./naver.css" />
+    <!--./:현재폴더-->
+    <title>네이버</title>
+  </head>
+  <body>
+    <header>
+      <div class="center-align">
+        <!--
+        <div style="display: inline-block;">네이버를 시작페이지로</div>
+        <div style="display: inline-block;">쥬니어네이버</div>
+        <div style="display: inline-block;">해피빈</div>
+        -->
+        <div id="header-top">
+          <a href="" class="link-set">네이버를 시작페이지로 </a>
+          <a href=""><span class="blind">쥬니어네이버</span></a>
+          <a href=""><span class="blind">해피빈</span></a>
+        </div>
+
+        <div id="header-search">
+          <a href="http://www.naver.com">
+            <h1>
+              <!-- <a href="http://www.naver.com">네이버</a>-->
+              <span>네이버</span>
+
+              <!--주석(comment)입니다.-->
+              <!--속성(arrtibute)입니다.-->
+            </h1>
+          </a>
+
+          <h2>검색창</h2>
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input /><!--짧은 text, input은 바로 종료태그 써주는 습관 들이기.-->
+            <span id="search-keybord"></span>
+            <span id="search-history"></span>
+            <button>
+              <span class="blind">검색</span> <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="center-align relative">
+        <div id="search-ranking">
+          <h2 class="blind">실시간 검색어</h2>
+          <div>
+            <span id="rank-number">1</span>
+            <span id="rank-title">제로초</span>
+          </div>
+          <ul>
+            <li>
+              <span class="rank-number">1</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">2</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">3</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">4</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">5</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">6</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">7</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">8</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">9</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <li>
+              <span class="rank-number">10</span>
+              <span class="rank-title">제로초</span>
+            </li>
+            <!--ul이랑 z-example은 형제
+z-inner은 z-exmple의 자식
+누가더 위로 갈까?
+-> 예상으로는 z-index를 1로 설정한 z-example 맨 아래 그리고 ul이 그다음 그리고 inner 순으로 겹쳐질 것이다.
+->근데 현실은 ul이 가장 위에 나타냄 
+왜그럴까? 바로 쌓임 맥락때문이다.
+부모는 부모들의 리그에서 놀고 자식은 아무리 해도 부모를 앞설수 없다.-->
+          </ul>
+          <div id="z-example">
+            <div id="z-inner"></div>
+          </div>
+        </div>
+        <ul id="nav-menu">
+          <li>
+            <a href=""><span></span><span class="blind">메일</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">카페</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">블로그</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지식인</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">쇼핑</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버페이</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">네이버tv</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">사전</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">뉴스</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">증권</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">부동산</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">지도</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">VIBE</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">도서</span></a>
+          </li>
+          <li>
+            <a href=""><span></span><span class="blind">웹툰</span></a>
+          </li>
+        </ul>
+        <div class="nav-divider"></div>
+        <ul>
+          <li class="more">
+            <a href=""><span></span><span class="blind">더보기</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div id="main-centered" class="center-align">
+        <div id="main-first-block">
+          <div id="main-ad"></div>
+          <div id="main-login"><h3>로그인</h3></div>
+        </div>
+
+        <div id="main-second-block">
+          <div class="float-left">
+            <div id="main-ytn">
+              <h3>연합뉴스</h3>
+              <ol>
+                <li>충격) 제초로 지금 목아파.....</li>
+              </ol>
+            </div>
+            <div id="main-newsstand">
+              <h3>뉴스스탠드</h3>
+              <ul>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+                <li><img src="./과학동아.png" alt="과학동아" /></li>
+                <li><img src="./한국일보.png" alt="한국일보" /></li>
+                <li><img src="./osen.png" alt="osen" /></li>
+                <li><img src="./매일경제.png" alt="매일경제" /></li>
+                <li><img src="./파이낸셜뉴스.png" alt="파이낸셜뉴스" /></li>
+                <li><img src="./한국경제TV.png" alt="한국경제TV" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="float-left">
+            <!--세로로 두토막-->
+            <div id="main-weather"></div>
+            <div id="main-second-ad"></div>
+          </div>
+        </div>
+        <div id="main-third-block">
+          <div id="main-category">
+            <h3>주제별 보기</h3>
+          </div>
+          <div id="main-shpping">
+            <iframe
+              src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+        </div>
+        <div id="main-fourth-block">
+          <div id="main-event">
+            <h3>이벤트</h3>
+          </div>
+          <div id="main-third-ad"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>공지사항</div>
+      <div>Creators</div>
+      <div>회사소개</div>
+    </footer>
+  </body>
+</html>
