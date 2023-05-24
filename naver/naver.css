@@ -287,6 +287,7 @@ nav li:first-child span:first-child는 동메달 1개 은메달 2개*/
   position: absolute;
   top: -14px;
   right: 0;
+  z-index: 100;
 }
 #search-ranking:hover ul {
   display: inline-block;
@@ -331,6 +332,7 @@ main {
   background-color: white;
   margin-bottom: 8px;
   float: left;
+  z-index: 1;
 }
 #main-second-block {
   display: inline-block;
