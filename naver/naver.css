@@ -476,3 +476,109 @@ main {
   background-color: #555;
 }
 /*main의 속성중 displat: inline-block을 주므로 마진상쇄를 없앴다.*/
+
+#main-category-top {
+  /*block format context생성해줘야함*/
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #ebeef3;
+}
+#subject-list,
+#subject-all,
+#subject-prev,
+#subject-next {
+  float: left;
+  /*button이 inline-block으로 설정할건데 이때 생기는 이상현상을 막기위해 처음부터
+  float:left로 구역을 잡아도 된다.*/
+  height: 45px;
+  padding: 0;
+}
+#subject-list {
+  width: 603px;
+  /*position:relative를 해줘야 컨테이닝블록이 된다. 컨테이닝 블록 기준으로 아래에서
+    설정한 postition absolute가 적용된다. */
+  position: relative;
+}
+#subject-all,
+#subject-prev,
+#subject-next {
+  position: relative;
+  width: 45px;
+  background: white;
+  border: none;
+  border-left: 1px solid #ebeef3;
+  background: white;
+}
+#subject-all span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 20px;
+  height: 14px;
+  background: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -218px -257px;
+}
+#subject-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 45px;
+  width: 1000px;
+}
+#subject-list li {
+  float: left;
+  margin-right: 10px;
+  padding: 14px 7px 0;
+  /*font-weight는 기본적으로 40이다.(nomal) 폰트 굵기를 설정하는 속석이당. 보통은 100이 얇고 400이 보통 700이 굵게하고 싶을때 사용한다.*/
+  font-weight: 700;
+  font-size: 14px;
+  font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo,
+    sans-serif;
+}
+#subject-list li.highlight {
+  border-bottom: 3px solid #00c73c;
+  color: #00b336;
+  height: 45px;
+}
+.opacity {
+  opacity: 0.5;
+  /*기본적을 background는 투명하다.*/
+  background: white;
+}
+.opacity.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+.opacity.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+#subject-prev span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px -0px;
+}
+#subject-next span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px -52px;
+}

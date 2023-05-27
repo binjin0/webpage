@@ -225,7 +225,39 @@
         </div>
         <div id="main-third-block">
           <div id="main-category">
-            <h3>주제별 보기</h3>
+            <h3 class="blind">주제별 보기</h3>
+            <div id="main-category-top">
+              <button id="subject-all">
+                <span class="blind">전체 주제 열기</span><span></span>
+              </button>
+              <div id="subject-list">
+                <!--아래 클래스는 opacity와 left 두개의 클래스를 한번에 쓴것이다. 하나의 클래스아니라는 것 알아두기-->
+                <div class="opacity left"></div>
+                <ul>
+                  <li>리빙</li>
+                  <li>푸드</li>
+                  <li>스포츠</li>
+                  <li>자동차</li>
+                  <li>패션</li>
+                  <li>뷰티</li>
+                  <li class="highlight">건강</li>
+                  <li>웹툰</li>
+                  <li>티비</li>
+                  <li>게임</li>
+                  <li>티비</li>
+                  <li>뮤직</li>
+                  <li>영화</li>
+                  <li>책문화</li>
+                </ul>
+                <div class="opacity right"></div>
+              </div>
+              <button id="subject-prev">
+                <span class="blind">이전 주제</span><span></span>
+              </button>
+              <button id="subject-next">
+                <span class="blind">다음 주제</span><span></span>
+              </button>
+            </div>
           </div>
           <div id="main-shpping">
             <iframe
