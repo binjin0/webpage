@@ -1,31 +1,6 @@
 /*Cascading Style Sheet*/
 /*선택자(selector)*/
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
-    helvetica, "Apple SD Gothic Neo", sans-serif;
-}
-/*h태그는 마진이 기본적으로 들어가있음. 그래서 미리 초기화 해놓고 시작하는 것이
-설정할때 헷갈리지 않는다.*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-.inline-block {
-  display: inline-block;
-}
-.float-left {
-  float: left;
-}
+
 .blind {
   position: absolute;
   overflow: hidden;
@@ -376,6 +351,15 @@ main {
   width: 332px;
   vertical-align: top;
 }
+#mian-ytn h3,
+#main-newsstand h1 {
+  font-size: 14px;
+  font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo,
+    sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  vertical-align: top;
+}
 #main-ytn {
   display: inline-block;
   width: 740px;
@@ -526,7 +510,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   height: 45px;
-  width: 1000px;
+  width: 700px;
 }
 #subject-list li {
   float: left;
