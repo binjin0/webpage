@@ -294,7 +294,7 @@ main {
   /* display: inline-block; ->float을 쓰면 inline-block이 필요없음*/
   width: 740px;
   height: 120px;
-  background: #555;
+  /* background: url(./ed1.jpg); */
   margin-right: 8px;
   margin-bottom: 8px;
   float: left;
